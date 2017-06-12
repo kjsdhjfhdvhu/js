@@ -5,13 +5,91 @@
 	<meta charset="utf-8">
 	<title>hello js</title>
 	<script type="text/javascript">
-		var arr =['罗桃','1235','like'];
-		var x,i;
-		for (var i = 0; i < arr.length; i++) {
-			x = arr[i]
+		
+		// var arr =['罗桃','1235','like'];
+		//var x,i;
+		
+		// for (var i = 0; i < arr.length; i++) {
+		// 	x = arr[i]
+		// 	alert(x);
+		// }
+	/*for(var key in arr){
+		alert(key);
+		alert(arr[key]);
+	}*/
+		/*var y = 0;
+		for(;;){
+			if (y>20) {
+				break;
+			} 
+			y++;
+			alert(y);
+		}*/
+		
+		var luo = {
+			name:'罗桃',
+			age:25,
+			city:'广州'
+		};
+
+		// for(var key in luo){
+		// 	alert(key);
+		// }
+
+		/*for(var key in luo){
+			if(luo.hasOwnProperty(key)){
+				alert(key);
+			}
+		}*/
+
+		/*var m = new Map();
+		m.set('罗桃',25);
+		m.set('颜娜娜',25);
+		m.set('老爸',52);
+		var a = m.has('罗桃');
+		var b = m.get('罗桃');
+		m.delete('颜娜娜');
+		alert(a);
+		alert(b);*/
+
+		
+
+		/*var a = ['A', 'B', 'C'];
+		var s = new Set(['A', 'B', 'C']);
+		var m = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
+		
+		for (var x of a) { // 遍历Array
+    		alert(x);
+		}
+		
+		for (var x of s) { // 遍历Set
+    		alert(x);
+		}
+
+		for (var x of m) { // 遍历Map
+    		alert(x[0] + '=' + x[1]);
+		}
+*/
+		/*var arr = ['A','B','C'];
+		var map = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
+		var set =  new Set(['G','H','X']);
+
+		for(var x of arr){
 			alert(x);
 		}
 
+		for(var x of map){
+			alert(x[0] + ',' + x[1]);
+		}
+		for(var x of set){
+			alert(x);
+		}*/
+
+		var a = ['d','g','t'];
+		a.name = 'luo';
+		for(var x in a){
+			alert(x);
+		}
 	</script>
 </head>
 <body>
